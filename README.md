@@ -16,7 +16,7 @@ Implémentation des sécurités suivantes :
 - CSRF token (inscription)
 
 # Installation
-Pour lancer le projet il ne faut qu'un serveur php (comme apache) et une BDD avec les identifiants suivants :
-DB_NAME : db_auth
-DB_USERNAME : root
+Pour lancer le projet il ne faut qu'un serveur php (comme apache) et une BDD avec les identifiants suivants :  
+DB_NAME : db_auth  
+DB_USERNAME : root  
 DB_PASSWORD : 
