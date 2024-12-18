@@ -13,8 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Échec de la connexion à la base de données : " . $conn->connect_error);
     }
 
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $username = htmlspecialchars(mysqli_real_escape_string($conn, $_POST['username']));
+    $email = htmlspecialchars(mysqli_real_escape_string($conn, $_POST['email']));
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
     // Insertion dans la base de données

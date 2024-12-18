@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Échec de la connexion à la base de données : " . $conn->connect_error);
     }
 
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $username = htmlspecialchars(mysqli_real_escape_string($conn, $_POST['username']));
     $password = $_POST['password'];
 
     // Récupérer l'utilisateur de la base de données
