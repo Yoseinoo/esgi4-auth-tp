@@ -14,3 +14,9 @@ Implémentation des sécurités suivantes :
 - Google recaptcha v2 (connexion)
 - Protection contre les injections SQL (partout)
 - CSRF token (inscription)
+
+# Installation
+Pour lancer le projet il ne faut qu'un serveur php (comme apache) et une BDD avec les identifiants suivants :
+DB_NAME : db_auth
+DB_USERNAME : root
+DB_PASSWORD : 
